@@ -1,0 +1,168 @@
+@import "_minix.scss";
+@import "common.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(70px);
+    @include box_flex;
+    padding: pxTorem(10px);
+    @include sizing;
+    .top {
+        width: 100%;
+        @include box_flex;
+        padding: pxTorem(10px);
+        @include sizing;
+        input {
+            @include flex;
+            border-bottom: 1px solid #000;
+            width: 80%;
+            height: pxTorem(30px);
+        }
+        p {
+            width: pxTorem(70px);
+            height: pxTorem(20px);
+            font-size: pxTorem(15px);
+        }
+    }
+    .list {
+        width: 100%;
+        @include box_flex;
+        @include sizing;
+        padding: pxTorem(20px);
+        justify-content: space-between;
+        ul {
+            width: 100%;
+            @include box_flex;
+            justify-content: space-between;
+            @include justify;
+            li {
+                width: 25%;
+                height: pxTorem(30px);
+                line-height: pxTorem(30px);
+                font-size: pxTorem(14px);
+                border-right: 1px solid #ccc;
+                cursor: pointer;
+                i.icon {
+                    font-size: pxTorem(20px);
+                }
+            }
+            .active {
+                color: orange;
+            }
+        }
+    }
+}
+
+section {
+    width: 100%;
+    @include flex;
+    div {
+        .pullUP,
+        .pullDown {
+            width: 100%;
+            height: pxTorem(50px);
+            line-height: pxTorem(50px);
+            background: #ccc;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            z-index: 999;
+        }
+        .pullDown {
+            top: pxTorem(-50px);
+        }
+        .pullUP {
+            bottom: pxTorem(-50px);
+        }
+    }
+    .big {
+        .content {
+            width: 100%;
+            @include box_flex;
+            @include sizing;
+            padding: pxTorem(10px);
+            border-bottom: 1px solid #ccc;
+            position: relative;
+            .left-list {
+                width: 30%;
+                img {
+                    width: 100%;
+                }
+            }
+            .right-list {
+                width: 70%;
+                @include sizing;
+                padding: pxTorem(10px);
+                div {
+                    h3 {
+                        font-size: pxTorem(14px);
+                    }
+                    .money {
+                        color: orange;
+                        font-size: pxTorem(17px);
+                        font-weight: 800;
+                    }
+                    >div {
+                        padding: pxTorem(10px);
+                        @include sizing;
+                        @include box_flex;
+                        justify-content: space-between;
+                        span {
+                            font-size: pxTorem(14px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mark {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+        .inner {
+            width: pxTorem(300px);
+            height: pxTorem(120px);
+            background: #fff;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            z-index: 999;
+            margin-left: pxTorem(-150px);
+            margin-top: pxTorem(-60px);
+            display: none;
+            ol {
+                width: 100%;
+                @include box_flex;
+                flex-direction: column;
+                @include align;
+                @include justify;
+                li {
+                    width: 100%;
+                    height: pxTorem(30px);
+                    line-height: pxTorem(30px);
+                    font-size: pxTorem(15px);
+                    text-align: center;
+                    border-bottom: 1px solid #ccc;
+                }
+                .color {
+                    color: orange;
+                }
+            }
+            .btn {
+                font-size: pxTorem(18px);
+                text-align: center;
+            }
+        }
+    }
+}

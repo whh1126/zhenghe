@@ -1,0 +1,356 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  position: relative; }
+
+header {
+  width: 100%;
+  height: 1.86667rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  padding: 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+  header .top {
+    width: 100%;
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    padding: 0.26667rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+    header .top input {
+      -webkit-flex: 1 1 0%;
+      flex: 1 1 0%;
+      border-bottom: 1px solid #000;
+      width: 80%;
+      height: 0.8rem; }
+    header .top p {
+      width: 1.86667rem;
+      height: 0.53333rem;
+      font-size: 0.4rem; }
+  header .list {
+    width: 100%;
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.53333rem;
+    justify-content: space-between; }
+    header .list ul {
+      width: 100%;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      justify-content: space-between;
+      -webkit-justify-content: center;
+      justify-content: center; }
+      header .list ul li {
+        width: 25%;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        font-size: 0.37333rem;
+        border-right: 1px solid #ccc;
+        cursor: pointer; }
+        header .list ul li i.icon {
+          font-size: 0.53333rem; }
+      header .list ul .active {
+        color: orange; }
+
+section {
+  width: 100%;
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%; }
+  section div .pullUP,
+  section div .pullDown {
+    width: 100%;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    background: #ccc;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    z-index: 999; }
+  section div .pullDown {
+    top: -1.33333rem; }
+  section div .pullUP {
+    bottom: -1.33333rem; }
+  section .big .content {
+    width: 100%;
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.26667rem;
+    border-bottom: 1px solid #ccc;
+    position: relative; }
+    section .big .content .left-list {
+      width: 30%; }
+      section .big .content .left-list img {
+        width: 100%; }
+    section .big .content .right-list {
+      width: 70%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0.26667rem; }
+      section .big .content .right-list div h3 {
+        font-size: 0.37333rem; }
+      section .big .content .right-list div .money {
+        color: orange;
+        font-size: 0.45333rem;
+        font-weight: 800; }
+      section .big .content .right-list div > div {
+        padding: 0.26667rem;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        justify-content: space-between; }
+        section .big .content .right-list div > div span {
+          font-size: 0.37333rem; }
+  section .mark {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none; }
+    section .mark .inner {
+      width: 8rem;
+      height: 3.2rem;
+      background: #fff;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      z-index: 999;
+      margin-left: -4rem;
+      margin-top: -1.6rem;
+      display: none; }
+      section .mark .inner ol {
+        width: 100%;
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        flex-direction: column;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center; }
+        section .mark .inner ol li {
+          width: 100%;
+          height: 0.8rem;
+          line-height: 0.8rem;
+          font-size: 0.4rem;
+          text-align: center;
+          border-bottom: 1px solid #ccc; }
+        section .mark .inner ol .color {
+          color: orange; }
+      section .mark .inner .btn {
+        font-size: 0.48rem;
+        text-align: center; }

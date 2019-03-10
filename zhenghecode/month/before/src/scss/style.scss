@@ -1,0 +1,172 @@
+@import "_minix.scss";
+@import "common.scss";
+.wrapper {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+    background: #eee;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(120px);
+    padding: pxTorem(10px) pxTorem(10px);
+    @include sizing;
+    position: relative;
+    z-index: 99;
+    background: #eee;
+    .top {
+        @include box_flex;
+        @include justify(space-between);
+        font-size: pxTorem(16px);
+        div {
+            span.mui-icon {
+                font-size: pxTorem(30px);
+                color: #000;
+            }
+            #inp {
+                width: pxTorem(260px);
+                height: pxTorem(33px);
+                padding: 0 pxTorem(10px);
+                border-radius: pxTorem(20px);
+            }
+        }
+    }
+    .bot {
+        width: 100%;
+        @include box_flex;
+        ul {
+            width: 100%;
+            @include box_flex;
+            margin-top: pxTorem(10px);
+            li {
+                font-size: pxTorem(16px);
+                font-weight: 600;
+                margin-left: pxTorem(25px);
+                padding: pxTorem(8px) 0;
+                &.active {
+                    border-bottom: 5px solid #FF5000;
+                }
+            }
+        }
+    }
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    border-radius: pxTorem(15px);
+    @include flex;
+    background: #fff;
+    overflow: hidden;
+    .top {
+        position: relative;
+        z-index: 99;
+        width: 100%;
+        @include box_flex;
+        background: #fff;
+        ul {
+            width: 100%;
+            @include box_flex;
+            margin-top: pxTorem(10px);
+            li {
+                font-size: pxTorem(15px);
+                margin-left: pxTorem(40px);
+                padding: pxTorem(8px) 0;
+                span.mui-icon {
+                    font-size: pxTorem(20px);
+                }
+            }
+        }
+    }
+    .content {
+        width: 100%;
+        padding: pxTorem(10px);
+        @include sizing;
+        margin-top: pxTorem(160px);
+        dl {
+            width: 100%;
+            @include box_flex;
+            dd {
+                padding: pxTorem(10px);
+                @include sizing;
+                h3 {
+                    font-size: pxTorem(12px);
+                    margin-bottom: pxTorem(28px);
+                }
+                p {
+                    margin-top: pxTorem(5px);
+                }
+                p:nth-child(2) {
+                    span {
+                        color: orange;
+                        border: 1px solid orange;
+                        border-radius: 10px;
+                        padding: pxTorem(2px);
+                    }
+                }
+                p:nth-child(3) {
+                    span {
+                        color: red;
+                        span {
+                            font-size: pxTorem(18px);
+                        }
+                    }
+                }
+                p:nth-child(4) {
+                    color: #ccc;
+                    span {
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+    .content1 {
+        width: 100%;
+        padding: pxTorem(10px);
+        @include sizing;
+        margin-top: pxTorem(160px);
+        @include box_flex;
+        @include flexWrap(wrap);
+        dl {
+            width: 50%;
+            @include box_flex;
+            @include direction(column);
+            dd {
+                padding: pxTorem(10px);
+                @include sizing;
+                h3 {
+                    font-size: pxTorem(12px);
+                    // margin-bottom: pxTorem(28px);
+                }
+                p {
+                    margin-top: pxTorem(5px);
+                }
+                p:nth-child(2) {
+                    span {
+                        color: orange;
+                        border: 1px solid orange;
+                        border-radius: 10px;
+                        padding: pxTorem(2px);
+                    }
+                }
+                p:nth-child(3) {
+                    span {
+                        color: red;
+                        span {
+                            font-size: pxTorem(18px);
+                        }
+                    }
+                }
+                p:nth-child(4) {
+                    color: #ccc;
+                    span {
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script src="js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="left">
+                <span>绿豆旅行记账</span>
+            </div>
+            <div class="center">
+                <p>我的默认旅行账单</p>
+            </div>
+            <div class="bottom">
+                <b>0</b>
+                <div>我的消费CNY</div>
+            </div>
+        </header>
+        <section>
+            <div class="title">
+                <h3>暂无记录</h3>
+                <p>点击下方加号开始记账吧</p>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a href="#"> <i class="icon iconfont icon-ding"></i></a>
+                    明细
+                </li>
+                <li class="active" id="add">
+                    <a href="#"><i class="icon iconfont icon-hao" ></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon iconfont icon-fenxiang"></i></a> 分账
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script>
+        var add = document.querySelector('#add');
+        add.onclick = function() {
+            window.location.href = "./page/list.html";
+        }
+    </script>
+</body>
+
+</html>

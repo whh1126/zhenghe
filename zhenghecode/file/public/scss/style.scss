@@ -1,0 +1,259 @@
+/*
+ * @Author: mikey.yinyaoxuan 
+ * @Date: 2018-11-22 09:58:27 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2019-01-19 16:44:17
+ */
+
+@import "_mixin";
+@import "common";
+@import "reset";
+$width: 100%;
+$height: 100%;
+.wrap {
+    width: $width;
+    height: $height;
+    @include box_flex;
+    @include direction(column);
+    header {
+        padding: pxTorem(10px);
+        @include box_flex;
+        @include justify(space-between);
+        @include align;
+        border-bottom: 1px solid #ccc;
+        >.icon {
+            font-size: pxTorem(16px);
+        }
+        .form {
+            @include flex;
+            @include box_flex;
+            @include justify(space-between);
+            background: #f0f0f0;
+            padding: pxTorem(5px);
+            margin-left: pxTorem(10px);
+            .icon {
+                color: #999;
+                font-size: pxTorem(14px);
+            }
+            input {
+                @include flex;
+                margin-left: pxTorem(5px);
+            }
+        }
+    }
+    main {
+        width: $width;
+        height: $height;
+        overflow: hidden;
+        .slide {
+            @include box_flex;
+        }
+        section {
+            width: $width;
+            height: $height;
+            &.left {
+                width: 25%;
+                border-right: 1px solid #ccc;
+                color: #999;
+                >div {
+                    height: $height + 5;
+                    .api {
+                        li {
+                            margin: pxTorem(10px) 0;
+                            padding: pxTorem(10px) 0;
+                            text-align: center;
+                            position: relative;
+                            p {
+                                width: pxTorem(4px);
+                                height: $height;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                background: #f58c00;
+                                display: none;
+                            }
+                            &.active {
+                                color: #333;
+                                p {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.right {
+                width: 75%;
+                height: $height;
+                >div {
+                    height: auto;
+                    position: relative;
+                    .list {
+                        padding: pxTorem(10px) pxTorem(15px);
+                        .top {
+                            img {
+                                width: $width;
+                            }
+                            p {
+                                text-align: center;
+                                margin-top: pxTorem(20px);
+                            }
+                        }
+                        .content {
+                            @include box_flex;
+                            @include flexWrap(wrap);
+                            @include justify(space-around);
+                            dl {
+                                @include box_flex;
+                                @include direction(column);
+                                @include justify;
+                                @include align;
+                                margin: pxTorem(35px) 0;
+                                dt {
+                                    text-align: center;
+                                    margin-bottom: pxTorem(10px);
+                                    padding: pxTorem(5px) 0;
+                                    img {
+                                        width: 80%;
+                                    }
+                                }
+                                dd {
+                                    color: #666;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .pullDown,
+            .pullUp {
+                width: $width;
+                height: pxTorem(45px);
+                line-height: pxTorem(45px);
+                text-align: center;
+                position: absolute;
+                left: 0;
+                &.pullDown {
+                    top: pxTorem(-45px);
+                    border-bottom: 1px solid #ccc;
+                }
+                &.pullUp {
+                    bottom: pxTorem(-45px);
+                    border-top: 1px solid #ccc;
+                }
+            }
+        }
+        .shop {
+            @include box_flex;
+            @include direction(column);
+            .shopList {
+                height: $height;
+                @include box_flex;
+                dl {
+                    @include box_flex;
+                    @include flex;
+                    border-bottom: 1px solid #999;
+                    padding: pxTorem(10px) 0;
+                    background: #f0f0f0;
+                    .checkbox {
+                        height: $height;
+                        padding: 0 pxTorem(10px);
+                        @include box_flex;
+                        @include justify;
+                        @include align;
+                        p {
+                            background: #f58c00;
+                            border-radius: 100%;
+                            color: #fff;
+                            width: pxTorem(15px);
+                            height: pxTorem(15px);
+                            line-height: pxTorem(15px);
+                            text-align: center;
+                            border: 1px solid #ccc;
+                        }
+                    }
+                    dt {
+                        @include box_flex;
+                        @include justify;
+                        @include align;
+                        padding: 0 pxTorem(10px);
+                        background: #fff;
+                    }
+                    dd {
+                        @include flex;
+                        margin-left: pxTorem(10px);
+                        padding-right: pxTorem(10px);
+                        .title {
+                            @include box_flex;
+                            @include justify(space-between);
+                            margin-bottom: pxTorem(3px);
+                            p {
+                                font-size: pxTorem(14px);
+                            }
+                            span {
+                                width: pxTorem(15px);
+                                height: pxTorem(15px);
+                                background: #fff;
+                                border: 1px solid #999;
+                                border-radius: 100%;
+                                line-height: pxTorem(15px);
+                                text-align: center;
+                                color: #999;
+                            }
+                        }
+                        >span {
+                            color: #666;
+                            font-size: pxTorem(10px);
+                        }
+                        .price {
+                            @include box_flex;
+                            @include justify(space-between);
+                            margin-top: pxTorem(15px);
+                            span {
+                                color: #9a0000;
+                                font-size: pxTorem(16px);
+                            }
+                            .num {
+                                @include box_flex;
+                                @include justify;
+                                width: pxTorem(50px);
+                                input {
+                                    background: #fff;
+                                    text-align: center;
+                                    width: 60%;
+                                    border: 1px solid #999;
+                                }
+                                button {
+                                    width: 20%;
+                                    border: 1px solid #999;
+                                    font-size: pxTorem(10px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        width: $width;
+        @include box_flex;
+        padding: pxTorem(10px) 0;
+        border-top: 1px solid #ccc;
+        dl {
+            @include flex;
+            @include box_flex;
+            @include direction(column);
+            @include align;
+            @include justify;
+            &.color {
+                color: #f58c00;
+            }
+            dt {
+                .icon {
+                    font-size: pxTorem(16px);
+                }
+            }
+        }
+    }
+}

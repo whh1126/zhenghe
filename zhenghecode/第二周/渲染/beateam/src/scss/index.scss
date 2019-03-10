@@ -1,0 +1,160 @@
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        header {
+            width: 100%;
+            height: 44px;
+            background: cyan;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            box-sizing: border-box;
+            p:nth-child(1) {
+                span {
+                    font-size: 12px;
+                    color: #fff;
+                }
+                i.icon {
+                    font-size: 12px;
+                    color: #fff;
+                }
+            }
+            p.three {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                span {
+                    font-size: 10px;
+                    color: #fff;
+                }
+                i.icon {
+                    font-size: 12px;
+                    color: #fff;
+                }
+            }
+            .center {
+                width: 100%;
+                flex: 1;
+                margin: 0 6px;
+                background: rgba(0, 0, 0, .3);
+                >i.icon {
+                    font-size: 12px;
+                    color: #fff;
+                    margin: 0 5px;
+                }
+                input {
+                    border: 0;
+                    padding: 8px;
+                    background: rgba(0, 0, 0, 0);
+                    color: #fff;
+                    outline: none;
+                }
+            }
+        }
+        section {
+            width: 100%;
+            flex: 1;
+            overflow-y: auto;
+            .banner {
+                width: 100%;
+                height: 150px;
+                img {
+                    width: 100%;
+                    height: 150px;
+                }
+            }
+            .list {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                dl {
+                    width: 20%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 5px;
+                    dt {
+                        width: 40px;
+                        height: 40px;
+                        margin-bottom: 3px;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                        }
+                    }
+                    dd {
+                        font-size: 12px;
+                    }
+                }
+            }
+            ul {
+                width: 30px;
+                height: 20px;
+                display: flex;
+                justify-content: space-between;
+                margin: 5px auto;
+                li {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    border: solid 1px cadetblue;
+                }
+                li.active {
+                    background: cadetblue;
+                }
+            }
+            .import {
+                width: 100%;
+                height: auto;
+                >p {
+                    width: 100%;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    font-size: 16px;
+                }
+                .newList {
+                    width: 100%;
+                    height: auto;
+                    dl {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        margin-bottom: 5px;
+                        dt {
+                            width: 80px;
+                            height: 80px;
+                            margin-bottom: 3px;
+                            img {
+                                width: 80px;
+                                height: 80px;
+                                // border-radius: 50%;
+                            }
+                        }
+                        dd {
+                            margin-left: 10px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }

@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  .wrap > p {
+    width: 100%;
+    height: 30px;
+    line-height: 30px; }
+  .wrap ul {
+    width: 100%;
+    height: auto; }
+    .wrap ul li {
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      border-bottom: solid 1px #ccc; }
+  .wrap .aside {
+    width: 30px;
+    height: auto;
+    background: red;
+    position: absolute;
+    top: 20px;
+    right: 0; }

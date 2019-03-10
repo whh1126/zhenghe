@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+// task1：如下继承是通过原型链方式实现的，通过组合继承方式修改它
+// 现在输出是 [ 'red', 'blue', 'green', 'black' ]，
+// 修改后使其输出为：[ 'red', 'blue', 'green' ]
+function SuperType() {
+    this.colors = ["red", "blue", "green"];
+}
+function SubType() {
+}
+SubType.prototype = new SuperType();
+var instance1 = new SubType();
+instance1.colors.push("black");
+var instance2 = new SubType();
+console.log(instance2.colors);
+
+
+</script>
+</body>
+
+</html>

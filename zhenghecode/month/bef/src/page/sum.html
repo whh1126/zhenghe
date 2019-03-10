@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/sum.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="left">
+                <i class="icon iconfont icon-xiaoyuhao"></i>
+                <span>请输入金额</span>
+            </div>
+        </header>
+        <section>
+            <div class="content">
+                <i class="icon iconfont icon-ditu"></i>
+                <b>0</b>
+            </div>
+            <div class="list">
+                <ul id="ul">
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>
+                        <i class="icon iconfont icon-tubiao_gengduo"></i>
+                    </li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>
+                        <i class="icon iconfont icon-hao"></i>
+                    </li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>
+                        <i class="icon iconfont icon-xiaoyuhao"></i>
+                    </li>
+                    <li>0</li>
+                    <li>.</li>
+                    <li class="active">确定</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="../js/libs/require.js" data-main="../js/page/sum.js"></script>
+    <script>
+        var active = document.querySelector('.active');
+        active.onclick = function() {
+            window.location.href = "../page/add.html";
+        }
+    </script>
+</body>
+
+</html>

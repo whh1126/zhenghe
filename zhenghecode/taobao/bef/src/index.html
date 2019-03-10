@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="top">
+                <input type="text" id="inp">
+                <p id="search">搜索</p>
+            </div>
+        </header>
+        <section>
+            <div>
+                <div class="pullDown">
+                    下拉刷新
+                </div>
+                <div class="list">
+                    <ul id="ul">
+                        <li class="sort">综合排序</li>
+                        <li class="pay" data-type="sales">销量优先</li>
+                        <li>筛选</li>
+                        <li class="active">
+                            <i class="icon iconfont icon-daishouhuo"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="big">
+                    <div class="content">
+                        <div class="left-list" id="leftlist">
+                            <!-- <img src="./images/close2_06.gif" alt=""> -->
+                        </div>
+                        <div class="right-list" id="rightlist">
+                            <!-- <div>
+                                        <h3>奇偶日开盘润肺开发人力了开放日开金夫人客人看看他跟他人口让客人</h3>
+                                        <p class="money">￥4567</p>
+                                        <div>
+                                            <span>免运费</span>
+                                            <span>2343人付款</span>
+                                            <span>苏州</span>
+                                        </div>
+                                    </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="mark">
+                    <div class="inner">
+                        <ol id="ol">
+                            <li class="color" data-type="normal">综合排序</li>
+                            <li data-type="sales">价格从高到低</li>
+                            <li data-type="sx">价格从低到高</li>
+                            <li data-type="credit">信用排序</li>
+                        </ol>
+                        <button class="btn">关闭</button>
+                    </div>
+                </div>
+                <div class="pullDown">
+                    上拉加载
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./js/libs/require.js" data-main="./js/page/index.js"></script>
+</body>
+
+</html>

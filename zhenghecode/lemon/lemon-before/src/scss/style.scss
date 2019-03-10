@@ -1,0 +1,202 @@
+@import "_minix.scss";
+@import "common.scss";
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.mui-inner-wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+    .header {
+        width: 100%;
+        height: pxTorem(120px);
+        background: #ffe141;
+        @include box_flex;
+        justify-content: space-between;
+        padding: pxTorem(5px);
+        @include sizing;
+        .top {
+            span {
+                font-size: pxTorem(14px);
+            }
+        }
+        .right {
+            div {
+                margin-top: pxTorem(10px);
+                font-size: pxTorem(14px);
+                .month {
+                    border-radius: pxTorem(3px);
+                    border: solid 1px #000;
+                    font-size: pxTorem(14px);
+                    margin-left: pxTorem(10px);
+                    padding: pxTorem(5px);
+                    @include sizing;
+                    text-align: center;
+                    overflow: hidden;
+                }
+                .year {
+                    border-radius: pxTorem(3px);
+                    border: solid 1px #000;
+                    font-size: pxTorem(14px);
+                    margin-left: pxTorem(10px);
+                    padding: pxTorem(5px);
+                    @include sizing;
+                    text-align: center;
+                    overflow: hidden;
+                }
+            }
+        }
+        .two {
+            width: 100%;
+            @include box_flex;
+            @include direction(column);
+        }
+        .three {
+            @include box_flex;
+            width: 100%;
+            justify-content: space-between;
+            .incom {
+                font-size: pxTorem(14px);
+            }
+            .save {
+                font-size: pxTorem(14px);
+                margin-left: pxTorem(80px);
+            }
+        }
+    }
+    section {
+        width: 100%;
+        @include flex;
+        overflow: hidden;
+        .big {
+            width: 100%;
+            .title {
+                width: 100%;
+                @include box_flex;
+                justify-content: space-between;
+                div {
+                    text-align: center;
+                    justify-content: center;
+                    i.icon {
+                        font-size: pxTorem(16px);
+                    }
+                }
+                .tab {
+                    width: 100%;
+                    @include box_flex;
+                    flex: 1;
+                    align-items: center;
+                    padding: pxTorem(15px);
+                    @include sizing;
+                    span {
+                        font-size: pxTorem(16px);
+                        border: solid 1px #000;
+                        border-radius: pxTorem(5px);
+                    }
+                    .active {
+                        background: #fce537
+                    }
+                }
+                div {
+                    i.icon {
+                        font-size: pxTorem(16px);
+                    }
+                }
+            }
+        }
+        .cont {
+            padding: pxTorem(15px);
+            @include sizing;
+            width: 100%;
+            @include box_flex;
+            font-size: pxTorem(15px);
+            justify-content: space-between;
+        }
+        .biglist {
+            .list {
+                width: 100%;
+                @include box_flex;
+                justify-content: space-between;
+                padding: pxTorem(10px);
+                @include sizing;
+                .list-inner {
+                    font-size: pxTorem(14px);
+                }
+                i.icon {
+                    font-size: pxTorem(14px);
+                }
+                span {
+                    font-size: pxTorem(14px);
+                }
+                h2 {
+                    font-size: pxTorem(25px);
+                    font-weight: 700;
+                }
+                .listcolor {
+                    color: #31e7ae;
+                }
+                .listfoot {
+                    color: #fd9d91;
+                }
+            }
+        }
+    }
+}
+
+.mui-off-canvas-left {
+    width: 100%;
+    .mui-scroll-wrapper {
+        font-size: pxTorem(20px);
+        background: #fff;
+    }
+    .mui-asid-title {
+        padding: pxTorem(15px);
+        @include sizing;
+        span {
+            border-radius: pxTorem(16px);
+            font-size: pxTorem(25px);
+            border: solid 1px #000;
+            text-align: center;
+        }
+    }
+    ul {
+        @include box_flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: pxTorem(10px);
+        @include sizing;
+        margin-top: pxTorem(10px);
+        li {
+            width: 50%;
+            padding: pxTorem(10px);
+            @include sizing;
+            height: pxTorem(50px);
+            line-height: pxTorem(50px);
+            font-size: pxTorem(20px);
+            border: solid 1px #000;
+            text-align: center;
+            border-radius: pxTorem(10px);
+        }
+    }
+}
+
+.bottom {
+    width: pxTorem(100px);
+    height: pxTorem(100px);
+    border-radius: 100%;
+    background: yellow;
+    position: absolute;
+    left: 25%;
+    top: 75%;
+    text-align: center;
+    .mui-icon {
+        font-size: pxTorem(50px);
+        color: #fff;
+        text-align: center;
+        margin-top: pxTorem(20px);
+    }
+}

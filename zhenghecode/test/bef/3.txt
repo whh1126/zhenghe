@@ -1,0 +1,21 @@
+ // middleware: function(req, res, next) {
+                //     var pathname = url.parse(req.url).pathname;
+                //     if (pathname === "/favicon.ico") {
+                //         return res.end('');
+                //     } else if (pathname === "/api/list") {
+                //         res.end(JSON.stringify({
+                //             code: 0,
+                //             data: data,
+                //             msg: "数据请求成功"
+                //         }))
+                //     } else if (pathname === "/api/search") {
+                //         res.end(JSON.stringify({
+                //             code: 0,
+                //             data: data,
+                //             msg: "搜索成功"
+                //         }))
+                //     } else {
+                //         pathname = pathname === "/" ? "index.html" : pathname;
+                //         res.end(fs.readFileSync(path.join(__dirname, 'src', pathname)));
+                //     }
+                // }

@@ -1,0 +1,132 @@
+@import 'common.scss';
+@import '_mixin.scss';
+.wrapper {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+}
+
+header {
+    width: 100%;
+    height: pxTorem(220px);
+    background: #1FC768;
+    padding: pxTorem(15px) pxTorem(10px);
+    @include sizing;
+    color: #fff;
+    h3 {
+        font-size: pxTorem(14px);
+        font-weight: normal;
+    }
+    h4 {
+        font-size: pxTorem(18px);
+        font-weight: normal;
+    }
+    h1 {
+        font-size: pxTorem(36px);
+    }
+    span {
+        font-size: pxTorem(12px);
+        color: #CBF2DC;
+        margin-top: pxTorem(-20px);
+    }
+}
+
+section {
+    width: 100%;
+    @include flex;
+    overflow-y: auto;
+    background: #F3F4F8;
+    .conclusion {
+        width: 100%;
+        height: pxTorem(30px);
+        @include box_flex;
+        @include justify(space-between);
+        @include align;
+        padding: 0 pxTorem(10px);
+        @include sizing;
+        span:nth-child(1) {
+            color: #4D5458;
+        }
+        span:nth-child(2) {
+            color: #A0A8AD;
+        }
+    }
+    .billlist {
+        width: 100%;
+        height: pxTorem(400px);
+        overflow: hidden;
+        div {
+            background: #fff;
+            padding: 0 pxTorem(10px);
+            @include sizing;
+            dl {
+                width: 100%;
+                height: pxTorem(60px);
+                @include box_flex;
+                @include align;
+                dt {
+                    font-size: pxTorem(16px);
+                    color: #FFD333;
+                    margin-right: pxTorem(15px);
+                }
+                dd {
+                    @include flex;
+                    @include box_flex;
+                    @include justify(space-between);
+                    @include align;
+                    border-bottom: 1px solid #B2B2B2;
+                    .left {
+                        p {
+                            font-size: pxTorem(16px);
+                            margin-bottom: pxTorem(5px);
+                        }
+                        span {
+                            font-size: pxTorem(14px);
+                            color: #A7AFB2;
+                        }
+                    }
+                    .right {
+                        h4 {
+                            font-size: pxTorem(16px);
+                            color: #40484C;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: pxTorem(50px);
+    background: #fff;
+    @include box_flex;
+    @include justify(space-around);
+    @include align;
+    padding: 0 pxTorem(10px);
+    @include sizing;
+    dl {
+        @include box_flex;
+        color: #1FC768;
+        dt.icon-wode1,
+        dt.icon-cuowu {
+            font-size: pxTorem(18px);
+        }
+        dd {
+            margin-left: pxTorem(16px);
+        }
+    }
+    dl:nth-child(2) {
+        color: #BBC3C7;
+    }
+    img {
+        position: absolute;
+        width: pxTorem(100px);
+        height: pxTorem(70px);
+        left: 35%;
+        bottom: 0;
+    }
+}

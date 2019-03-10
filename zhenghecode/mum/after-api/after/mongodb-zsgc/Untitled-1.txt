@@ -1,0 +1,42 @@
+// collections.find({ age: { $gt: 22 } }).toArray(function(err, result) {
+    //     if (err) {
+    //         throw err;
+    //     }
+    //     console.log(result);
+
+    // })
+    // collections.find({ $or: [{ age: 22 }, { username: "vk1" }] }).toArray(function(err, result) {
+    //     if (err) {
+    //         throw err;
+    //     }
+    //     console.log(result);
+
+    // })
+    // collections.find({ age: { $gt: 22 } }).toArray(function(err, result) {
+    //         if (err) {
+    //             throw err;
+    //         }
+    //         console.log(result);
+    
+    //     })
+    //  collections.find({ age: { $gt: 22 } }).toArray(function(err, result) {
+    //     if (err) {
+    //         throw err;
+    //     }
+    //     console.log(result);
+
+    // })
+    // collections.find().limit(5).skip(3).toArray(function(err, result) {
+    //     if (err) {
+    //         throw err;
+    //     }
+    //     console.log(result);
+    // })
+    // router.get('/api/list', function(req, res, next) {
+//     mongo.find(dbName, collName, function(rs) {
+//         res.send({
+//             code: 1,
+//             data: rs
+//         })
+//     })
+// });

@@ -1,0 +1,13 @@
+DOMException: Failed to execute 'open' on 
+'XMLHttpRequest': '/api/list' is not a valid HTTP method.
+ // var xml = new XMLHttpRequest();
+            // xml.onload = function(data) {
+            //     var data = typeof data == "string" ? JSON.parse(data) : data;
+            //     console.log(data);
+            //     if (data.code === 0) {
+            //         render(data);
+            //         rightList(data);
+            //     }
+            // }
+            // xml.open('Get', '/api/list', true);
+            // xml.send(data.data);

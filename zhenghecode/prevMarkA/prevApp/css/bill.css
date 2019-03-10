@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  width: 100%;
+  height: 200px;
+  background: #2AC845; }
+  header h2 {
+    width: 100%;
+    height: 100px;
+    line-height: 100px; }
+  header .topMoney {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    font-size: 50px;
+    color: white; }
+
+section {
+  widows: 100%;
+  flex: 1; }
+  section .swiper-container {
+    width: 100%;
+    height: 150px;
+    background: white;
+    margin: 20px 0; }
+    section .swiper-container .swiper-slide {
+      display: flex;
+      align-items: center; }
+      section .swiper-container .swiper-slide dl {
+        width: 20%;
+        text-align: center;
+        font-size: 30px; }
+        section .swiper-container .swiper-slide dl dd {
+          margin: 10px 0; }
+    section .swiper-container .active {
+      color: green; }
+  section .join {
+    width: 100%;
+    height: 120px;
+    background: white;
+    border-bottom: 2px solid #ccc; }
+    section .join dl {
+      width: 100%;
+      height: 120px;
+      display: flex;
+      line-height: 120px;
+      font-size: 30px; }
+      section .join dl dd {
+        margin-left: 20px; }
+      section .join dl dt img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        margin-left: 20px;
+        margin-top: 10px; }
+  section .tabMethod {
+    width: 100%;
+    height: 120px;
+    background: white;
+    margin: 5px 0;
+    display: flex; }
+    section .tabMethod dl {
+      width: 100%;
+      height: 120px;
+      display: flex;
+      line-height: 120px;
+      font-size: 30px; }
+      section .tabMethod dl dd {
+        margin-left: 20px; }
+      section .tabMethod dl dt img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        margin-left: 20px;
+        margin-top: 10px; }
+    section .tabMethod .activeBill {
+      color: green; }
+  section .info {
+    width: 100%;
+    height: 120px;
+    margin: 20px 0;
+    background: white;
+    display: flex;
+    line-height: 120px; }
+    section .info .Bill_info {
+      flex: 1;
+      height: 100px;
+      margin: 10px 0;
+      font-size: 25px;
+      border: 0;
+      outline: none; }
+
+footer {
+  width: 100%;
+  height: 120px;
+  background: #2AC845;
+  color: white;
+  text-align: center;
+  line-height: 120px; }
+  footer .save {
+    width: 98%;
+    height: 120px;
+    background: #2AC845;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    font-size: 30px; }

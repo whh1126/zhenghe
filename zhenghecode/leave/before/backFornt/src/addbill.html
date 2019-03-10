@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/addbill.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <script src="js/libs/flexible.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <i class="iconfont icon-zuojiantou-01"></i>
+            <span>添加账单</span>
+        </header>
+        <section>
+            <div class="price-box">
+                <h2>￥<span id="price">52.00</span></h2>
+                <span>今天</span>
+            </div>
+            <div class="icons">
+                <dl class="active">
+                    <dt class="iconfont icon-youhuiquan-geren-01"></dt>
+                    <dd>一般</dd>
+                </dl>
+                <dl>
+                    <dt class="iconfont icon-shouji1"></dt>
+                    <dd>美食</dd>
+                </dl>
+                <dl>
+                    <dt class="iconfont icon-naozhong"></dt>
+                    <dd>交通</dd>
+                </dl>
+                <dl>
+                    <dt class="iconfont icon-shipin"></dt>
+                    <dd>购物</dd>
+                </dl>
+                <dl>
+                    <dt class="iconfont icon-gongzuojilu"></dt>
+                    <dd>住宿</dd>
+                </dl>
+            </div>
+            <div class="note">
+                <span>备注</span>
+                <input type="text" placeholder="账单描述">
+            </div>
+        </section>
+        <footer>
+            <button id="complete">完成</button>
+        </footer>
+    </div>
+    <script src="./js/libs/require.js" data-main="./js/page/addbill.js"></script>
+</body>
+
+</html>

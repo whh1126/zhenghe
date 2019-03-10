@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script src="js/libs/flexible.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <i class="iconfont icon-xiangzuojiantou"></i>
+            <span>输入金额</span>
+        </header>
+        <section>
+            <div class="input">
+                <img src="images/price.png" alt="">
+                <div>
+                    <input type="text" placeholder="0" id="amount">
+                </div>
+            </div>
+            <table id="table">
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td class="no">X</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td class="no">+</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td class="no">-</td>
+                </tr>
+                <tr>
+                    <td colspan="2">0</td>
+                    <td>.</td>
+                    <td class="sure" id="sure">确定</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <script src="./js/libs/require.js" data-main="./js/page/calculator.js"></script>
+</body>
+
+</html>

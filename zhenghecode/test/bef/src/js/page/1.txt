@@ -1,0 +1,101 @@
+// require(['../config'], function() {
+//     require(['jquery', 'better', 'flexible'], function($, BScroll, flexible) {
+//             console.log(jquery);
+//             console.log(BScroll);
+
+//             // var inp = document.querySelector('#inp');
+//             // console.log(inp);
+//             // //实例section实现页面拖动
+//             // var BScroll = new BScroll('section', {
+//             //     prototype: 2,
+//             //     click: true,
+//             //     scrollbar: true
+//             // });
+//             // BScroll.on('scroll', function() {
+//             //     console.log(this.y);
+//             //     if (this.y < this.maxScrollY - 50) {
+//             //         $('.pullUP').html('加载释放更多').addClass('filp');
+//             //     } else if (this.y > this.maxScrollY - 50) {
+//             //         $('.pullUP').html('下拉刷新').removeClass('filp');
+//             //     }
+//             //     if (this.y > 50) {
+//             //         $('.pullDown').html('释放更多');
+//             //     }
+//             //     if (this.y < 50) {
+//             //         $('.pullDown').html('下拉刷新');
+//             //     }
+//             // })
+//             // BScroll.on('scrollEnd', function() {
+//             //     if ($('.pullUP').hasClass('filp')) {
+//             //         pullUP();
+//             //     }
+//             //     if ($('.pullDown').hasClass('filp')) {
+//             //         pullDown();
+//             //     }
+//             // })
+
+//             // function pullUP() {
+//             //     var str = '';
+//             //     for (var i = 0; i < 10; i++) {
+//             //         str += `<div class="content">
+//             //     <div class="big">
+//             //         <div class="continner">
+//             //             <img src="${item.img}" alt="">
+//             //         </div>
+//             //         <div class="word">
+//             //             <h3>${item.title}</h3>
+//             //             <p>${item.yunfei}</p>
+//             //             <div>
+//             //                 <b>￥${item.price}</b><span>2.9万人付款</span><span class="address">北京</span>
+//             //                 <div>
+//             //                     <h4>辅导辅导辅导<em>进店</em></h4>
+//             //                 </div>
+//             //             </div>
+//             //         </div>
+//             //     </div>
+//             // </div>`
+//             //     }
+//             //     $(str).appendTo('section>#bigcontent');
+//             //     BScroll.refresh();
+//             // }
+
+//             // function pullDown() {}
+
+//             // init();
+
+//             // function init() {
+//             //     $.ajax({
+//             //         url: "/api/list",
+//             //         dataType: "json",
+//             //         success: function(data) {
+//             //             render(data.data)
+//             //         }
+//             //     })
+//             // }
+//             // //渲染页面
+//             // function render(data) {
+//             //     data.forEach(function(item) {
+//             //         var html = ``;
+//             //         html += `<div class="content">
+//             //     <div class="big">
+//             //         <div class="continner">
+//             //             <img src="${item.img}" alt="">
+//             //         </div>
+//             //         <div class="word">
+//             //             <h3>${item.title}</h3>
+//             //             <p>${item.yunfei}</p>
+//             //             <div>
+//             //                 <b>￥${item.price}</b><span>2.9万人付款</span><span class="address">北京</span>
+//             //                 <div>
+//             //                     <h4>辅导辅导辅导<em>进店</em></h4>
+//             //                 </div>
+//             //             </div>
+//             //         </div>
+//             //     </div>
+//             // </div>`
+//             //         bigcontent.innerHTML += html;
+//             //     })
+//             // }
+//         })
+//         //点击搜索
+// })

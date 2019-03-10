@@ -1,0 +1,79 @@
+@import "_minix.scss";
+@import "common.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction( column);
+}
+
+header {
+    width: 100%;
+    height: pxTorem(130px);
+    background: lightgreen;
+    @include direction( column);
+    @include align;
+    padding: pxTorem(15px);
+    @include sizing;
+    font-size: pxTorem(15px);
+    .left {
+        padding: 5 pxTorem(10px);
+        font-size: pxTorem(15px);
+        span {
+            margin-top: pxTorem(30px);
+            font-size: pxTorem(15px);
+        }
+    }
+    .bottom {
+        b {
+            font-size: pxTorem(40px);
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}
+
+section {
+    width: 100%;
+    @include flex;
+    overflow-y: auto;
+    .title {
+        width: 100%;
+        height: pxTorem(300px);
+        @include box_flex;
+        @include direction( column);
+        @include align;
+        justify-content: center;
+        padding: 5 pxTorem(15px);
+        @include sizing;
+        h3 {
+            font-size: pxTorem(15px);
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(50px);
+    @include box_flex;
+    ul {
+        width: 100%;
+        @include box_flex;
+        @include align;
+        justify-content: space-around;
+        li {
+            a {
+                i.icon {
+                    font-size: pxTorem(15px);
+                }
+            }
+            height: pxTorem(30px);
+            line-height: pxTorem(30px);
+            font-size: pxTorem(15px);
+        }
+        .active {
+            font-size: pxTorem(20px);
+            font-weight: 700;
+        }
+    }
+}

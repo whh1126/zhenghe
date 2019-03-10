@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <ul id="list">
+            <!-- <li>张三</li>
+            <li>13</li>
+            <li>李四</li>
+            <li>14</li> -->
+        </ul>
+    </div>
+    <script src="./js/comment/zepto.js"></script>
+    <script src="./js/index.js">
+        $.ajax({
+            url: "/api/list",
+            dataType: 'json',
+            success: function(data) {
+                console.log(data);
+            }
+        })
+    </script>
+    <!-- <script>
+        var xml = new XMLHttpRequest();
+        xml.open('get', '/list', true);
+        xml.onload = function() {
+                if (xml.status === 200) {
+                    var data = JSON.parse(xml.responseText);
+                    console.log(data);
+                }
+            }
+            // xml.setRequestHeader('content-type', 'application/x-www-form-urlencoded');
+        xml.send(data.data);
+    </script> -->
+</body>
+
+</html>

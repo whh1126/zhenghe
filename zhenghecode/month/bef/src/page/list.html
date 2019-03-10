@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/list.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="left">
+                <span>绿豆旅行记账</span>
+            </div>
+            <div class="center">
+                <p>我的默认旅行账单</p>
+            </div>
+            <div class="bottom">
+                <b>620.00</b>
+                <div>我的消费CNY</div>
+            </div>
+        </header>
+        <section>
+            <div class="title">
+                <span>今天</span>
+                <span>￥620.00</span>
+            </div>
+            <div class="sum">
+                <div class="big">
+                    <div class="list">
+                        <div class="list-inner">
+                            <i class="icon iconfont icon-shanchu"></i>
+                            <span>餐饮</span>
+                        </div>
+                        <span id="pay">付款</span>
+                    </div>
+                    <b>￥500.00</b>
+                </div>
+                <div class="big">
+                    <div class="list">
+                        <div class="list-inner">
+                            <i class="icon iconfont icon-shanchu"></i>
+                            <span>餐饮</span>
+                        </div>
+                        <span id="pay">付款</span>
+                    </div>
+                    <b>￥500.00</b>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a href="#"> <i class="icon iconfont icon-ding"></i></a>
+                    明细
+                </li>
+                <li class="active" id="add">
+                    <a href="#"><i class="icon iconfont icon-hao"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="icon iconfont icon-fenxiang"></i></a> 分账
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="../js/libs/require.js" data-main="../js/page/list.js"></script>
+    <script>
+        var add = document.querySelector('#add');
+        add.onclick = function() {
+            window.location.href = "../page/sum.html";
+        }
+    </script>
+
+</body>
+
+</html>

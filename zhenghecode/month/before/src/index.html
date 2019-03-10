@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/libs/flexible.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="top">
+                <div><span class="mui-icon mui-icon-arrowleft"></span></div>
+                <div><input type="text" id="inp"></div>
+                <div><span class="mui-icon mui-icon-more"></span></div>
+            </div>
+            <div class="bot">
+                <ul>
+                    <li class="active">全部</li>
+                    <li id="tmall">天猫</li>
+                    <li>店铺</li>
+                    <li>淘宝经验</li>
+                    <li>挑尖货</li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <div class="top">
+                <ul>
+                    <li>综合</li>
+                    <li id="sales">销量</li>
+                    <li>视频</li>
+                    <li id="tabs"><span class="mui-icon mui-icon-star"></span></li>
+                    <li>筛选</li>
+                </ul>
+            </div>
+            <div class="mui-scroll-wrapper" id="refreshContainer">
+                <div class="mui-scroll">
+                    <!--这里放置真实显示的DOM内容-->
+                    <div class="content" id="content">
+                        <!-- <dl>
+                            <dt><img src="./img/1.png" ></dt>
+                            <dd>
+                                <h3><img src="./img/4.png">Dior/迪奥烈艳金唇膏3.5g哑光滋润旗舰口红520/999正品</h3>
+                                <p><span>包邮</span></p>
+                                <p><span>￥<span>228</span></span> 2.9万人付款 北京</p>
+                                <p>碧凡化妆品专营店 <span>进店 &gt;</span></p>
+                            </dd>
+                        </dl> -->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="./js/libs/require.js"></script>
+    <script>
+        // var data = [{
+        //     "dtimg": "1.png",
+        //     "ddimg": "5.png",
+        //     "title": "Dior/迪奥烈艳金唇膏3.5g哑光滋润旗舰口红520/999正品",
+        //     "method": "包邮",
+        //     "price": "288",
+        //     "people": "2.9万",
+        //     "address": "北京",
+        //     "store": "碧凡化妆品专营店"
+        // }, {
+        //     "dtimg": "2.png",
+        //     "ddimg": "4.png",
+        //     "title": "【直营】 法国Christian Dior迪奥进口粉漾诱惑变色润唇",
+        //     "method": "满88包邮",
+        //     "price": "259",
+        //     "people": "1170",
+        //     "address": "杭州",
+        //     "store": "天猫国际官方专营"
+        // }, {
+        //     "dtimg": "3.png",
+        //     "ddimg": "4.png",
+        //     "title": "Dior/迪奥烈蓝金唇膏口红正品专柜999哑光/888/52",
+        //     "method": "包邮",
+        //     "price": "258",
+        //     "people": "1.5万",
+        //     "address": "新界",
+        //     "store": "drogist海外旗舰店"
+        // }]
+        require(['js/main'], function() {
+            require(['index'])
+        })
+    </script>
+
+</body>
+
+</html>

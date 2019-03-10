@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // task1：封装通用的xhr
+        // 要求：兼容ie，设置timeout，xhr为同步请求
+
+        function createXHR() {
+            if (typeof XMLHttpRequest != "undefined") {
+                // your code here
+
+            } else if (typeof ActiveXObject != "undefined") {
+                if (typeof arguments.callee.activeXString != "string") {
+                    var versions = ["MSXML2.XMLHttp.6.0", "MSXML2.XMLHttp.3.0", "MSXML2.XMLHttp"],
+                        for (i = 0, len = versions.length; i < len; i++) {
+                            try {
+                                new ActiveXObject(versions[i]);
+                                arguments.callee.activeXString = versions[i];
+                                break;
+                            } catch (ex) {}
+                        }
+                }
+                return new ActiveXObject(arguments.callee.activeXString);
+            } else {
+                throw new Error("No XHR object available.");
+            }
+        }
+        // your code here
+
+
+
+        // task1：封装一个jsonp函数
+        // your code here
+
+        getJSONP('http://localhost:8888/', function (response) {　　
+            alert(response.name);
+        });
+    </script>
+</body>
+
+</html>

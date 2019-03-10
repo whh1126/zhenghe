@@ -1,0 +1,50 @@
+<!-- <div class="content">
+                        <div class="big">
+                            <div class="continner">
+                                <img src="img/img1_03.gif" alt="">
+                            </div>
+                            <div class="word">
+                                <h3>空额额度看看广告贴口头沟通沟通了沟通沟通</h3>
+                                <p>包邮</p>
+                                <div>
+                                    <b>￥228</b><span>2.9万人付款</span><span class="address">北京</span>
+                                    <div>
+                                        <h4>辅导辅导辅导<em>进店</em></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="big">
+                            <div class="continner">
+                                <img src="img/img1_03.gif" alt="">
+                            </div>
+                            <div class="word">
+                                <h3>空额额度看看广告贴口头沟通沟通了沟通沟通</h3>
+                                <p>包邮</p>
+                                <div>
+                                    <b>￥228</b><span>2.9万人付款</span><span class="address">北京</span>
+                                    <div>
+                                        <h4>辅导辅导辅导<em>进店</em></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content"> -->
+                    <!-- <div class="big">
+                        <div class="continner">
+                            <img src="img/img1_03.gif" alt="">
+                        </div>
+                        <div class="word">
+                            <h3>空额额度看看广告贴口头沟通沟通了沟通沟通</h3>
+                            <p>包邮</p>
+                            <div>
+                                <b>￥228</b><span>2.9万人付款</span><span class="address">北京</span>
+                                <div>
+                                    <h4>辅导辅导辅导<em>进店</em></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->

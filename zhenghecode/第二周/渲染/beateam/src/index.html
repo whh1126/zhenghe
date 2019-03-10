@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <p>
+                <span>北京</span>
+                <i class="icon iconfont icon-xiangxia"></i>
+            </p>
+            <div class="center">
+                <i class="icon iconfont icon-fangdajing"></i>
+                <input type="text" placeholder="输入商家/品类/商圈">
+            </div>
+            <p class="three"><i class="icon iconfont icon-icongerenzhongxin-01
+"></i><span>我的</span></p>
+        </header>
+        <section>
+            <div class="banner">
+
+            </div>
+            <div class="list">
+            </div>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+            </ul>
+            <div class="import">
+                <p>猜你喜欢</p>
+                <div class="newList"></div>
+
+            </div>
+        </section>
+    </div>
+    <script>
+        var banner = document.querySelector('.banner');
+        var list = document.querySelector('.list');
+        var newList = document.querySelector('.newList');
+        //请求ajax;
+        function ajax(type, url, ck) {
+            //请求ajax
+            var xml = new XMLHttpRequest();
+            xml.onload = function() {
+                if (xml.status >= 200 || xml.status <= 300 && xml.status === 304) {
+                    data = xml.responseText;
+                    ck(data);
+                }
+            }
+            xml.open(type, url, true);
+            xml.send();
+        }
+        ajax('get', "/api/getDate", function(data) {
+            var datas = JSON.parse(data);
+            var str = `<img src="${datas.src}" alt="">`
+            banner.innerHTML = str;
+            var sur = "";
+            datas.result.forEach(function(v) {
+                sur += `<dl>
+                    <dt><img src="${v.imgs}"></dt>
+                    <dd>${v.title}</dd>
+                </dl>`;
+            })
+            list.innerHTML = sur;
+            var lists = '';
+            datas.list.forEach(function(lis) {
+                lists += `<dl>
+                        <dt><img src="${lis.listSrc}"></dt>
+                        <dd>
+                            <div class="top">
+                                <p>${lis.name}</p>
+                                <span>${lis.detail}</span>
+                            </div>
+                            <div class="bottom">
+                                <p><span class="price">${lis.price}</span><span>${lis.priceS}</span></p>
+                                <span>${lis.sum}</span>
+                            </div>
+                        </dd>
+                    </dl>`
+            })
+            newList.innerHTML = lists;
+        })
+    </script>
+</body>
+
+</html>

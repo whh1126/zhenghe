@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: #f2f1f1;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  width: 100%;
+  height: 200px;
+  background: limegreen;
+  padding: 0 15px;
+  box-sizing: border-box; }
+  header h2, header h1 {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    font-weight: normal;
+    color: black; }
+  header h1 {
+    color: white; }
+  header p {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+    font-size: 25px; }
+
+section {
+  width: 100%;
+  flex: 1;
+  overflow-y: scroll; }
+  section .listBox {
+    width: 100%;
+    height: auto; }
+    section .listBox .pic {
+      width: 100%;
+      height: 200px;
+      background: white; }
+      section .listBox .pic .time {
+        width: 100%;
+        height: 50px;
+        background: #f2f2f2;
+        line-height: 50px; }
+      section .listBox .pic .userInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 75px;
+        line-height: 75px;
+        font-size: 25px; }
+        section .listBox .pic .userInfo .mui-icon {
+          color: green;
+          font-size: 30px; }
+        section .listBox .pic .userInfo span {
+          margin: 0 15px;
+          font-size: 30px; }
+      section .listBox .pic p {
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        font-size: 25px;
+        padding: 0 15px;
+        box-sizing: border-box; }
+  section .tabBill {
+    display: none; }
+
+.red {
+  color: red; }
+
+.green {
+  color: green; }
+
+footer {
+  width: 100%;
+  height: 120px;
+  background: #ccc; }
+  footer .list {
+    width: 100%;
+    height: 120px;
+    display: flex; }
+    footer .list li {
+      width: 33.3%;
+      text-align: center;
+      line-height: 120px;
+      font-size: 28px; }
+    footer .list .active {
+      color: green;
+      background: white; }
+    footer .list #add {
+      color: white;
+      background: limegreen;
+      font-size: 36px; }

@@ -1,0 +1,147 @@
+@import "_minix.scss";
+@import "common.scss";
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction (column);
+}
+
+header {
+    width: 100%;
+    height: pxTorem(44px);
+    @include box_flex;
+    @include justify(space-between);
+    padding: pxTorem(10px) pxTorem(5px);
+    @include sizing;
+    .center {
+        background: #ccc;
+        @include box_flex;
+        @include flex;
+        @include align;
+        i.icon {
+            font-size: pxTorem(13px);
+            color: black;
+            margin: pxTorem(5px);
+        }
+        input {
+            @include flex;
+        }
+    }
+    .right {
+        span {
+            font-size: pxTorem(15px);
+        }
+    }
+}
+
+section {
+    width: 100%;
+    @include flex;
+    @include direction(column);
+    overflow: hidden;
+    .list {
+        width: 100%;
+        padding: pxTorem(10px);
+        @include sizing;
+        ul {
+            width: 100%;
+            @include box_flex;
+            @include justify(space-between);
+            li {
+                width: 20%;
+            }
+            i.icon {
+                font-size: pxTorem(15px);
+            }
+        }
+    }
+    .big {
+        width: 100%;
+        height: 100%;
+        @include flex;
+        overflow: hidden;
+        position: relative;
+        .pullUP,
+        .pullDown {
+            width: 100%;
+            height: pxTorem(50px);
+            line-height: pxTorem(50px);
+            background: #ccc;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            z-index: 999;
+        }
+        .pullDown {
+            top: pxTorem(-50px);
+        }
+        .pullUP {
+            bottom: pxTorem(-50px);
+        }
+        .content {
+            width: 100%;
+            @include box_flex;
+            padding: pxTorem(10px) pxTorem(10px);
+            @include sizing;
+            border-bottom: 1px solid #ccc;
+            .left {
+                width: 50%;
+                margin: pxTorem(10px);
+                img {
+                    width: 100%;
+                }
+            }
+            .right {
+                width: 50%;
+                margin: pxTorem(10px);
+                @include align;
+                >div {
+                    h3 {
+                        font-weight: 700;
+                        font-size: pxTorem(13px);
+                    }
+                    p {
+                        margin: pxTorem(5px) pxTorem(5px);
+                    }
+                }
+                .last {
+                    width: 100%;
+                    @include box_flex;
+                    @include justify(space-between);
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(50px);
+    background: pink;
+    @include box_flex;
+    ol {
+        width: 100%;
+        @include box_flex;
+        @include justify(space-around);
+        @include align;
+        li {
+            @include box_flex;
+            @include direction(column);
+            font-size: pxTorem(15px);
+            a {
+                display: block;
+                text-align: center;
+                i.icon {
+                    font-size: pxTorem(15px);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .wrap header {
+    width: 100%;
+    height: 44px;
+    background: cyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box; }
+    .wrap header p:nth-child(1) span {
+      font-size: 12px;
+      color: #fff; }
+    .wrap header p:nth-child(1) i.icon {
+      font-size: 12px;
+      color: #fff; }
+    .wrap header p.three {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .wrap header p.three span {
+        font-size: 10px;
+        color: #fff; }
+      .wrap header p.three i.icon {
+        font-size: 12px;
+        color: #fff; }
+    .wrap header .center {
+      width: 100%;
+      flex: 1;
+      margin: 0 6px;
+      background: rgba(0, 0, 0, 0.3); }
+      .wrap header .center > i.icon {
+        font-size: 12px;
+        color: #fff;
+        margin: 0 5px; }
+      .wrap header .center input {
+        border: 0;
+        padding: 8px;
+        background: rgba(0, 0, 0, 0);
+        color: #fff;
+        outline: none; }
+  .wrap section {
+    width: 100%;
+    flex: 1;
+    overflow-y: auto; }
+    .wrap section .banner {
+      width: 100%;
+      height: 150px; }
+      .wrap section .banner img {
+        width: 100%;
+        height: 150px; }
+    .wrap section .list {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px; }
+      .wrap section .list dl {
+        width: 20%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5px; }
+        .wrap section .list dl dt {
+          width: 40px;
+          height: 40px;
+          margin-bottom: 3px; }
+          .wrap section .list dl dt img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; }
+        .wrap section .list dl dd {
+          font-size: 12px; }
+    .wrap section ul {
+      width: 30px;
+      height: 20px;
+      display: flex;
+      justify-content: space-between;
+      margin: 5px auto; }
+      .wrap section ul li {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: solid 1px cadetblue; }
+      .wrap section ul li.active {
+        background: cadetblue; }
+    .wrap section .import {
+      width: 100%;
+      height: auto; }
+      .wrap section .import > p {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 16px; }
+      .wrap section .import .newList {
+        width: 100%;
+        height: auto; }
+        .wrap section .import .newList dl {
+          width: 100%;
+          height: auto;
+          display: flex;
+          margin-bottom: 5px; }
+          .wrap section .import .newList dl dt {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 3px; }
+            .wrap section .import .newList dl dt img {
+              width: 80px;
+              height: 80px; }
+          .wrap section .import .newList dl dd {
+            margin-left: 10px;
+            font-size: 12px; }

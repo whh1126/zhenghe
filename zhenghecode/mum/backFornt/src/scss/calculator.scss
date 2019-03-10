@@ -1,0 +1,75 @@
+@import 'common.scss';
+@import '_mixin.scss';
+.wrapper {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+}
+
+header {
+    width: 100%;
+    height: pxTorem(50px);
+    padding: 0 pxTorem(10px);
+    @include sizing;
+    @include box_flex;
+    @include align;
+    i.icon-xiangzuojiantou {
+        font-size: pxTorem(16px);
+        margin-right: pxTorem(15px);
+    }
+    span {
+        font-size: pxTorem(16px);
+    }
+}
+
+section {
+    margin-top: pxTorem(350px);
+    width: 100%;
+    @include flex;
+    .input {
+        width: 100%;
+        height: pxTorem(55px);
+        @include box_flex;
+        @include align;
+        padding: 0 pxTorem(10px);
+        @include sizing;
+        margin-bottom: pxTorem(15px);
+        img {
+            width: pxTorem(50px);
+            height: pxTorem(50px);
+        }
+        div {
+            margin-left: pxTorem(5px);
+            @include flex;
+            input {
+                font-size: pxTorem(32px);
+                color: #1FC768;
+                font-weight: bold;
+            }
+            input::-webkit-input-placeholder {
+                color: #1FC768;
+                font-weight: bold;
+            }
+        }
+    }
+    table {
+        width: 100%;
+        height: pxTorem(200px);
+        background: #E9EEF0;
+        tr {
+            td {
+                width: 25%;
+                height: pxTorem(50px);
+                text-align: center;
+                line-height: pxTorem(50px);
+                border: 3px solid #fff;
+                font-size: pxTorem(16px);
+            }
+            .sure {
+                background: #20C768;
+                color: #fff;
+            }
+        }
+    }
+}

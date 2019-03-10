@@ -1,0 +1,180 @@
+@import "common.scss";
+@import "_minix.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(50px);
+    @include box_flex;
+    font-size: pxTorem(15px);
+    @include align;
+    div {
+        width: 50%;
+        @include box_flex;
+        justify-content: center;
+        a {
+            i.icon {
+                font-size: pxTorem(15px);
+            }
+        }
+    }
+}
+
+section {
+    width: 100%;
+    @include flex;
+    .title {
+        width: 100%;
+        @include box_flex;
+        font-size: pxTorem(15px);
+        padding: pxTorem(5px);
+        @include sizing;
+        span {
+            font-size: pxTorem(13px);
+        }
+        b {
+            font-size: pxTorem(13px);
+            width: pxTorem(50px);
+            height: pxTorem(30px);
+            background: red;
+            cursor: pointer;
+        }
+    }
+    .big {
+        width: 100%;
+        padding: pxTorem(10px);
+        @include sizing;
+        border-bottom: 1px solid #fff;
+        .shop {
+            @include box_flex;
+            @include direction(column);
+            .shopList {
+                height: 100%;
+                @include box_flex;
+                dl {
+                    @include box_flex;
+                    @include flex;
+                    border-bottom: 1px solid #999;
+                    padding: pxTorem(10px) 0;
+                    background: #f0f0f0;
+                    .checkbox {
+                        height: 100%;
+                        padding: 0 pxTorem(10px);
+                        @include box_flex;
+                        @include justify;
+                        @include align;
+                        p {
+                            background: #000;
+                            border-radius: 100%;
+                            color: #fff;
+                            width: pxTorem(15px);
+                            height: pxTorem(15px);
+                            line-height: pxTorem(15px);
+                            text-align: center;
+                            border: 1px solid #ccc;
+                        }
+                    }
+                    dt {
+                        @include box_flex;
+                        @include justify;
+                        @include align;
+                        padding: 0 pxTorem(10px);
+                        background: #fff;
+                    }
+                    dd {
+                        @include flex;
+                        margin-left: pxTorem(10px);
+                        padding-right: pxTorem(10px);
+                        .title {
+                            @include box_flex;
+                            @include justify(space-between);
+                            margin-bottom: pxTorem(3px);
+                            p {
+                                font-size: pxTorem(14px);
+                            }
+                            span {
+                                width: pxTorem(15px);
+                                height: pxTorem(15px);
+                                background: #fff;
+                                border: 1px solid #999;
+                                border-radius: 100%;
+                                line-height: pxTorem(15px);
+                                text-align: center;
+                                color: #999;
+                            }
+                        }
+                        >span {
+                            color: #666;
+                            font-size: pxTorem(10px);
+                        }
+                        .price {
+                            @include box_flex;
+                            @include justify(space-between);
+                            margin-top: pxTorem(15px);
+                            span {
+                                color: #9a0000;
+                                font-size: pxTorem(16px);
+                            }
+                            .num {
+                                @include box_flex;
+                                @include justify;
+                                width: pxTorem(50px);
+                                input {
+                                    background: #fff;
+                                    text-align: center;
+                                    width: 60%;
+                                    border: 1px solid #999;
+                                }
+                                button {
+                                    width: 20%;
+                                    border: 1px solid #999;
+                                    font-size: pxTorem(10px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .checkall {
+        width: 100%;
+        @include box_flex;
+        justify-content: space-around;
+        @include align;
+        font-size: pxTorem(15px);
+    }
+}
+
+.pactive {
+    background: red;
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(50px);
+    background: #fff;
+    border-top: solid 1px #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    dl {
+        dd {
+            text-align: center;
+            font-size: pxTorem(15px);
+            .iconfont {
+                font-size: pxTorem(15px);
+            }
+        }
+    }
+    dl.active {
+        dd {
+            color: red;
+        }
+    }
+}

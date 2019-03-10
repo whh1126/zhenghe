@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .wrap1 {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        
+        .wrap1>p {
+            width: 300px;
+            height: 30px;
+        }
+        
+        .wrap2 {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            display: none;
+        }
+        
+        .wrap2>p {
+            width: 300px;
+            height: 30px;
+        }
+        
+        .wrap3 {
+            display: none;
+        }
+        
+        .wrap3>p {
+            width: 300px;
+            height: 30px;
+        }
+        
+        .wrap3>.mews {
+            width: 300px;
+            height: 80px;
+            border: solid 1px #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap1">
+        <p>1,个人信息</p>
+        <input type="text" placeholder="用户名" class="user"></br>
+        <input type="text" placeholder="邮箱" class="emile"></br>
+        <input type="password" placeholder="密码" class="pwd"></br>
+        <input type="button" value="下一步" class="button">
+    </div>
+    <div class="wrap2">
+        <p>2,社交信息</p>
+        <input type="text" placeholder="微信" class="wr1"></br>
+        <input type="text" placeholder="新浪微博" class="wr2"></br>
+        <input type="text" placeholder="腾讯微博" class="wr3"></br>
+        <input type="button" value="上一步" class="shang">
+        <input type="button" value="完成" class="finish">
+    </div>
+    <div class="wrap3">
+        <p>3.完成</p>
+        <div class="mews">您的信息已填写完成</div>
+    </div>
+    <!--<script src="js/page/index.js"></script>-->
+    <script src="js/lib/require.js" data-main="./js/page/index.js"></script>
+</body>
+
+</html>

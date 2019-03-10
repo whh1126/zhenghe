@@ -1,0 +1,70 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.box{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+header{
+	width: 100%;
+	height: 90px;
+	line-height: 90px;
+	background: #f2f2f2;
+	font-size: 30px;
+	text-align: center;
+}
+section{
+	width: 100%;
+	flex: 1;
+	.money{
+		width: 98%;
+		height: 150px;
+		font-size: 50px;
+		padding-left: 15px;
+		background:palegoldenrod;
+	}
+	
+}
+footer{
+	width: 100%;
+	height: 600px;
+	background: #F0AD4E;
+	.keyCode{
+		width: 100%;
+		height: 600px;
+		background: #f1f1f1;
+		display: flex;
+		flex-wrap:wrap;
+		li{
+			width: 23%;
+			height:125px;
+			text-align: center;
+			font-size: 40px;
+			border: 1px solid white;
+			 margin: 0 8px;
+			line-height: 125px;
+			box-shadow: 5px 5px 5px #ccc;
+		}
+		.sure{
+			width: 23%;
+			height:125px;
+			text-align: center;
+			font-size: 40px;
+			border: 1px solid white;
+			 margin: 0 8px;
+			line-height: 125px;
+			box-shadow: 5px 5px 5px #ccc;
+			background: limegreen;
+			color: white;
+		}
+	}
+}

@@ -1,0 +1,80 @@
+    @import "_minix.scss";
+    @import "common.scss";
+    .wrap {
+        width: 100%;
+        height: 100%;
+        @include box_flex;
+        @include direction(column);
+    }
+    
+    header {
+        width: 100%;
+        height: pxTorem(200px);
+        @include direction( column);
+        @include align;
+        padding: pxTorem(15px);
+        @include sizing;
+        font-size: pxTorem(15px);
+        .left {
+            padding: 5 pxTorem(10px);
+            font-size: pxTorem(15px);
+            i.icon {
+                font-size: pxTorem(15px);
+            }
+            span {
+                margin-top: pxTorem(30px);
+                font-size: pxTorem(15px);
+            }
+        }
+    }
+    
+    section {
+        width: 100%;
+        @include flex;
+        .content {
+            width: 100%;
+            @include box_flex;
+            @include align;
+            padding: pxTorem(10px);
+            @include sizing;
+            i.icon {
+                font-size: pxTorem(20px);
+                margin-left: pxTorem(5px);
+            }
+            b {
+                font-size: pxTorem(28px);
+                font-weight: 800;
+                color: green;
+            }
+        }
+        .list {
+            width: 100%;
+            @include box_flex;
+            flex-direction: column;
+            #ul {
+                width: 100%;
+                height: pxTorem(300px);
+                @include box_flex;
+                flex-wrap: wrap;
+                @include align;
+                @include justify;
+                text-align: center;
+                background: #ccc;
+                li {
+                    width: 20%;
+                    height: pxTorem(30px);
+                    line-height: pxTorem(30px);
+                    font-size: pxTorem(16px);
+                    border-bottom: 1px solid #000;
+                    border-right: 1px solid #000;
+                    i.icon {
+                        font-size: pxTorem(16px);
+                    }
+                }
+                .active {
+                    color: #fff;
+                    background: green;
+                }
+            }
+        }
+    }

@@ -1,0 +1,263 @@
+/*
+ * @Author: yinyaoxuan 
+ * @Date: 2019-01-16 09:35:40 
+ * @Last Modified by: yinyaoxuan
+ * @Last Modified time: 2019-01-16 15:47:40
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+/*
+ * @Author: mikey.yinyaoxuan 
+ * @Date: 2018-11-19 08:52:32 
+ * @Last Modified by: mikey.yinyaoxuan
+ * @Last Modified time: 2018-11-22 10:09:31
+ */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: 0; }
+
+.wrap {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; }
+  .wrap header {
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: 0;
+    padding: 0.26667rem;
+    border-bottom: 1px solid #ccc; }
+    .wrap header .title {
+      font-size: 0.42667rem; }
+    .wrap header .buy {
+      height: 0.66667rem;
+      border-radius: 0.33333rem;
+      padding: 0 0.26667rem;
+      font-size: 0.32rem;
+      background: #ffcb05;
+      border: 0; }
+  .wrap main {
+    -webkit-flex: 1 1 0%;
+    flex: 1 1 0%;
+    overflow: hidden;
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    box-shadow: insert 0 -0.8rem 0.53333rem 0.26667rem #eaeaea; }
+    .wrap main h1 {
+      font-weight: 600;
+      font-size: 1.06667rem;
+      margin-top: 1.06667rem;
+      text-align: center; }
+    .wrap main h3 {
+      font-size: 0.66667rem;
+      margin-top: 0.26667rem; }
+    .wrap main p {
+      font-size: 0.42667rem;
+      width: 80%;
+      text-align: center;
+      color: #666;
+      margin-top: 0.8rem; }
+    .wrap main .price {
+      font-size: 0.53333rem;
+      font-weight: 600;
+      font-family: cursive;
+      color: #333;
+      margin-top: 0.26667rem; }
+    .wrap main .buy {
+      height: 0.93333rem;
+      font-size: 0.32rem;
+      background: #ffcb05;
+      border: 0;
+      border-radius: 0.46667rem;
+      padding: 0 0.53333rem;
+      margin-top: 0.4rem; }

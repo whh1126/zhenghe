@@ -1,0 +1,57 @@
+{
+    "code": 0,
+    "src": "./img13/6.jpg",
+    "result": [{
+        "imgs": "./img13/1.jpg",
+        "title": "娱乐"
+    }, {
+        "imgs": "./img13/12.jpg",
+        "title": "娱乐"
+    }, {
+        "imgs": "./img13/13.jpg",
+        "title": "娱乐"
+    }, {
+        "imgs": "./img13/14.jpg",
+        "title": "娱乐"
+    }, {
+        "imgs": "./img13/50.jpg",
+        "title": "娱乐"
+    }, {
+        "imgs": "./img13/15.jpg",
+        "title": "娱乐"
+    }, {
+        "imgs": "./img13/16.jpg",
+        "title": "娱乐"
+    }, {
+        "imgs": "./img13/17.jpg",
+        "title": "娱乐"
+    }, {
+        "imgs": "./img13/19.jpg",
+        "title": "娱乐"
+    }, {
+        "imgs": "./img13/10.jpg",
+        "title": "娱乐"
+    }],
+    "list": [{
+        "listSrc": "./img13/1.jpg",
+        "name": "全聚德",
+        "detail": "东城区精品烤鸭",
+        "price": "439元",
+        "priceS": "门市价398元",
+        "sum": "已售344件"
+    }, {
+        "listSrc": "./img13/19.jpg",
+        "name": "全聚德",
+        "detail": "东城区精品烤鸭",
+        "price": "439元",
+        "priceS": "门市价398元",
+        "sum": "已售344件"
+    }, {
+        "listSrc": "./img13/10.jpg",
+        "name": "全聚德",
+        "detail": "东城区精品烤鸭",
+        "price": "439元",
+        "priceS": "门市价398元",
+        "sum": "已售344件"
+    }]
+}
